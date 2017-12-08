@@ -15,7 +15,7 @@
     img2.setAttribute("height","32");
     var textmsg=document.createElement("p");
     textmsg.classList.add("imessagecont");
-    textmsg.innerHTML="Kademia est plus rapide sur sa nouvelle application android : faites l'experience";
+    textmsg.innerHTML="";
     var alink=document.createElement('a');
     alink.classList.add("imessagecont");
     alink.setAttribute("href","");
