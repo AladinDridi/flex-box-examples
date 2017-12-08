@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <style>
+      #applimsg{
+          background-color: beige;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+      }    
+      
+      #applimsg > .imessagecont:nth-child(1){
+         margin: auto;
+          cursor: pointer;
+      }
+      #applimsg > .imessagecont:nth-child(2){
+         margin: auto;
+      }
+      #applimsg > .imessagecont:nth-child(3){
+          margin-left: 22px;
+      }
+      #applimsg > .imessagecont:nth-child(4){
+          margin: auto;
+          border: 1px solid white;
+           background-color:#CDCD0D;
+          text-decoration: none;
+          color: black;
+          white-space: nowrap;
+      }
+      
+      
+</style>  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    jQuery( document ).ready( function(){
+    //Your codes strat from here
+    if ($.cookie('notice') == 'bouttonfermer') {
+    $('#applimsg').hide();
+     
+  } else {
+     $('#applimsg').show();
+     
+  }
+    // Show or hide on load depending on cookie 
+ 
+  $('#fermerboutton').click(function(e) {
+   
+    $.cookie('notice','bouttonfermer');
+    
+  });
+  $('#element2').click(function(e){
+      $.cookie('notice','bouttonfermer');
+  });
+});
+    </script> 
+    <script>
+    var btn = document.getElementById('fermerboutton');
+        btn.addEventListener("click",function(event){
+            document.getElementById('applimsg').style.visibility="hidden";
+        });
+    
+    </script>
+</head>
+<body>
+<div id="applimsg">
+<img class="imessagecont" id="fermerboutton" width="12" height="12" src="https://cdn.iconscout.com/public/images/icon/premium/png-512/cancel-cross-delete-letter-x-remove-3c90434ffe690e93-512x512.png"/>
+<img class="imessagecont" width="32" height="32" src="https://www.kademia.tn/wp-content/uploads/2016/10/favicon.png"/>
+<p class="imessagecont">Kademia est plus rapide sur sa nouvelle application android : faites l'experience</p>
+<a href="https://play.google.com/store/apps/details?id=com.app.kademias" class="imessagecont" id="element2">CLiquez ici</a>
+
+
+</div>
+    
+</body>
+</html>
