@@ -1,0 +1,25 @@
+#applimsg{
+          background-color: beige;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+      }    
+      
+      #applimsg > .imessagecont:nth-child(1){
+         margin: auto;
+          cursor: pointer;
+      }
+      #applimsg > .imessagecont:nth-child(2){
+         margin: auto;
+      }
+      #applimsg > .imessagecont:nth-child(3){
+          margin-left: 22px;
+      }
+      #applimsg > .imessagecont:nth-child(4){
+          margin: auto;
+          border: 1px solid white;
+           background-color:#CDCD0D;
+          text-decoration: none;
+          color: black;
+          white-space: nowrap;
+      }
